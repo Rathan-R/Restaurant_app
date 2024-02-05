@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  position: relative;
+}
+
+.bar {
+  border: none;
+  width: 25px;
+  height: 3px;
+  list-style: none;
+  background-color: rgb(250, 246, 5);
+  margin: 2px;
+  border-radius: 5px;
+}
+
+#logo {
+  flex: 3;
+  min-width: 200px;
+}
+nav {
+  display: flex;
+  flex-grow: 1;
+}
+
+nav a {
+  flex-grow: 1;
+}
+nav a span {
+  transition: border 0.2s linear;
+  margin-left: 5px;
+}
+nav a span:hover {
+  opacity: 0.8;
+  border-radius: 2px;
+  border-bottom: 5px solid rgb(174, 175, 174);
+}
+
+.top {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(bg-2.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.header a {
+  text-decoration: none;
+  color: yellow;
+  min-width: 120px;
+}
+.header a i {
+  margin-right: 8px;
+}
+.header {
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 1em;
+  align-items: center;
+
+  color: yellow;
+}
+.mid {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  justify-content: center;
+  margin-left: 20px;
+}
+.mid h2 {
+  color: palevioletred;
+  padding: 10px;
+}
+.mid p {
+  padding: 5px 0px 5px 10px;
+}
+.mid h2 {
+  font-size: 30px;
+}
+.mid #para1 {
+  color: yellow;
+}
+.mid #para2 {
+  color: white;
+}
+.mid button {
+  color: white;
+  background-color: rgb(6, 173, 17);
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 10px;
+  opacity: 0.8;
+  width: 150px;
+  font-size: 20px;
+}
+.mid button:hover {
+  opacity: 1;
+}
+
+.menu-lists {
+  background-image: linear-gradient(
+    90deg,
+    hsl(0deg 0% 48%) 0%,
+    hsl(0deg 0% 43%) 3%,
+    hsl(0deg 0% 39%) 7%,
+    hsl(0deg 1% 35%) 14%,
+    hsl(0deg 1% 30%) 22%,
+    hsl(0deg 1% 26%) 33%,
+    hsl(0deg 2% 22%) 46%,
+    hsl(0deg 3% 18%) 62%,
+    hsl(0deg 4% 14%) 80%,
+    hsl(0deg 5% 11%) 100%
+  );
+
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+.top + h3 {
+  background-image: linear-gradient(
+    90deg,
+    hsl(0deg 0% 48%) 0%,
+    hsl(0deg 0% 43%) 3%,
+    hsl(0deg 0% 39%) 7%,
+    hsl(0deg 1% 35%) 14%,
+    hsl(0deg 1% 30%) 22%,
+    hsl(0deg 1% 26%) 33%,
+    hsl(0deg 2% 22%) 46%,
+    hsl(0deg 3% 18%) 62%,
+    hsl(0deg 4% 14%) 80%,
+    hsl(0deg 5% 11%) 100%
+  );
+  padding: 10px;
+  text-align: center;
+  color: rgb(207, 160, 94);
+}
+table {
+  width: 100%;
+  padding: 10px;
+}
+
+.menu-lists tr {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.8em;
+}
+.menu-lists td:nth-child(1) {
+  flex-grow: 1;
+  justify-self: flex-start;
+}
+.menu-lists td:nth-child(2) {
+  justify-self: flex-end;
+}
+
+.menu-lists th {
+  color: rgb(126, 216, 126);
+}
+
+.maincourse {
+  grid-row: span 2;
+}
+
+#locheading {
+  text-align: center;
+  color: palevioletred;
+  background-image: linear-gradient(
+    90deg,
+    hsl(0deg 0% 48%) 0%,
+    hsl(0deg 0% 43%) 3%,
+    hsl(0deg 0% 39%) 7%,
+    hsl(0deg 1% 35%) 14%,
+    hsl(0deg 1% 30%) 22%,
+    hsl(0deg 1% 26%) 33%,
+    hsl(0deg 2% 22%) 46%,
+    hsl(0deg 3% 18%) 62%,
+    hsl(0deg 4% 14%) 80%,
+    hsl(0deg 5% 11%) 100%
+  );
+}
+.locations h2 {
+  color: rgb(126, 216, 126);
+}
+.locations {
+  display: flex;
+  background-image: linear-gradient(
+    90deg,
+    hsl(0deg 0% 48%) 0%,
+    hsl(0deg 0% 43%) 3%,
+    hsl(0deg 0% 39%) 7%,
+    hsl(0deg 1% 35%) 14%,
+    hsl(0deg 1% 30%) 22%,
+    hsl(0deg 1% 26%) 33%,
+    hsl(0deg 2% 22%) 46%,
+    hsl(0deg 3% 18%) 62%,
+    hsl(0deg 4% 14%) 80%,
+    hsl(0deg 5% 11%) 100%
+  );
+  color: white;
+  flex-wrap: wrap;
+}
+
+.locations div {
+  flex: 1;
+  min-width: 220px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
